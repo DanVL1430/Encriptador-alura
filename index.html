@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es-cl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>Encriptador de Textos Alura</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <!--Imagen superior "logo Alura"-->
+        <img class="img_1" src="assets/img/Vector.png" alt="Imagen superior de Alura" >
+         <!--Titulo del encriptador-->
+         <h1 class="h1">Encriptador de Textos Alura</h1>
+    </header>
+    <main class="proyecto">
+        <div class="textoPermitido">
+            <img src="assets/img/warning.png" alt="Imagen de texto permitido">
+            <span style="color: red;">Solo texto en minuscula, sin acentos ni caracteres especiales.!</span>
+        </div>      
+        <div>
+            <textarea class="textoDeEntrada" id="textoDeEntrada" placeholder="Ingresa el texto aquí"></textarea>
+        </div class= "botonesEncriptacion">
+            <button  onclick="encriptar()" type="button">Encriptar</button>
+            <button  onclick="desencriptar()" type="button">Desencriptar</button>
+            <button  onclick="limpiar()" type="button" >Limpiar</button>
+        <div>
+            <img class="img_2" src="assets/img/Muñeco.png" alt ="Imagen de fondo de pantalla ">
+            <div class="mensaje_encriptado">
+                <textarea class="textoDeSalida" id="textoDeSalida"  readonly placeholder="El resultado aparecerá aquí"></textarea>
+                <button class="Copiar" onclick="copiarTexto()">Copiar</button>
+            </div>
+        </div>            
+        <video muted autoplay loop>
+            <source src="./video/Fondo video Tecnología Digital De Código Binario De Matriz HD.mp4" 
+            type="video/mp4">
+        </video>
+        <div class="capa"></div>
+    </main>
+    <!--Pie de firma-->
+    <footer class="footer">Desarrollado por Daniel Villalon para Alura Latam "Challenge encriptador de texto".</footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
+
