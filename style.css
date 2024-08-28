@@ -2,10 +2,202 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 
-
 *{
     padding: 0;
     margin: 0;
 }
+
+
+.proyecto  {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background: #7dfa92;
+}
+
+.titulo {
+    position: relative;
+    width: 100vw;
+    height: 5vh;
+    background: #7dfa92;
+
+}
+.img_1 {
+    position: relative;
+    width: 3%;
+    height: 30%;
+    left: 1%;
+    margin-top: 1%;
+}
+
+.textoDeEntrada {
+position: absolute;
+width: 42%;
+height: 60%;
+left: 5%;
+top: 18;
+border: none;
+font-family: "Ubuntu Mono", monospace;
+font-weight: 400;
+font-size: 24px;
+line-height: 150%;
+background-color: #ffeded;
+border-radius: 12px;
+
+}
+.textoDeEntrada::placeholder{
+    color: #40336e;
+}
+
+.textoDeEntrada:focus,
+.textoDeEntrada:active{
+    border: none;
+    outline: none;
+}
+
+.textoPermitido {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 8px;
+    position: absolute;
+    width: 80%;
+    left: 5%;
+    top: 65%;
+}
+
+.textoPermitido p {
+    font-family: "Ubuntu Mono", monospace;
+    font-weight: 300;
+    color: #ff0000;
+    font-size: 14px;
+    line-height: 150%;
+    order: 1;
+    flex-grow: 0;
+    
+}
+
+.botonesEncriptacion {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 3% 0;
+    position: absolute;
+    width: 60%;
+    left: 3%;
+    top: 70%;
+}
+
+.encriptar {
+    align-items: center;
+    justify-content: center;
+    padding: 1.5%;
+    gap: 10px;
+    width: 25%;
+    background-color: #7dfa92;
+    border-radius: 15px;
+    font-family: "Ubuntu Mono", monospace;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 20px;
+    text-align: center;
+    color: #000000;
+}
+
+.desencriptar_ {
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 1.5%;
+    gap: 10px;
+    width: 25%;
+    background-color: #7a9682;
+    border-radius: 15px;
+    font-family: "Ubuntu Mono", monospace;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 20px;
+    text-align: center;
+    color: #000000;   
+}
+
+.limpiar {
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 1.5%;
+    gap: 10px;
+    width: 25%;
+    background-color: #ffffff;
+    border-radius: 15px;
+    font-family: "Ubuntu Mono", monospace;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 20px;
+    text-align: center;
+    color: #000000; 
+
+}
+
+.encriptado {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 25%;
+    height: 50%;
+    left: 55%;
+    top: 5%;
+    background: #ffffff;
+    box-shadow: 0px 24px 32px -8px ;
+    border-radius: 32px;
+
+}
+
+.mensaje_encriptado {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 25%;
+    height: 40%;
+    left: 55%;
+    top: 55%;
+    background: #ffeded;
+    border-radius: 32px;
+   
+}
+
+.mensaje_encriptado h1 {
+width: 60%;
+font-family: "Ubuntu Mono", monospace;
+font-weight: 600;
+font-size: 24px;
+line-height: 120%;
+text-align: center;
+color: #4144e0;
+}
+
+.mensaje_encriptado p {
+    width: 60%;
+    font-family: "Ubuntu Mono", monospace;
+    font-weight: 200;
+    font-size: 18px;
+    line-height: 120%;
+    text-align: center;
+    color: #4144e0;
+}
+
+.mensaje_encriptado img {
+    position: absolute;
+    width: 80%;
+    height: 50%;
+    top: 15%;
+   
+    
+}
+
+
 
 

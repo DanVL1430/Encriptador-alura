@@ -8,38 +8,41 @@
 </head>
 <body>
     <header>
+        <div class="titulo">
         <!--Imagen superior "logo Alura"-->
         <img class="img_1" src="assets/img/Vector.png" alt="Imagen superior de Alura" >
-         <!--Titulo del encriptador-->
-         <h1 class="h1">Encriptador de Textos Alura</h1>
+        </div>
     </header>
     <main class="proyecto">
         <div class="textoPermitido">
             <img src="assets/img/warning.png" alt="Imagen de texto permitido">
-            <span style="color: red;">Solo texto en minuscula, sin acentos ni caracteres especiales.!</span>
+            <p>Solo se permite texto en minuscula, sin acentos ni caracteres especiales!</p>
+            <!--<span style="color: red;">Solo texto en minuscula, sin acentos ni caracteres especiales!</span>-->
         </div>      
         <div>
             <textarea class="textoDeEntrada" id="textoDeEntrada" placeholder="Ingresa el texto aquí"></textarea>
-        </div class= "botonesEncriptacion">
-            <button  onclick="encriptar()" type="button">Encriptar</button>
-            <button  onclick="desencriptar()" type="button">Desencriptar</button>
-            <button  onclick="limpiar()" type="button" >Limpiar</button>
-        <div>
+        </div>
+        <div class= "botonesEncriptacion">
+            <button class="encriptar" onclick="encriptar()" type="button">Encriptar</button>
+            <button class="desencriptar_" onclick="desencriptar()" type="button">Desencriptar</button>
+            <button class="limpiar" onclick="limpiar()" type="button" >Limpiar</button>
+        </div>
+        <div class="encriptado" >
             <img class="img_2" src="assets/img/Muñeco.png" alt ="Imagen de fondo de pantalla ">
-            <div class="encritado">
-            <h2 id="tituloMensaje"> Ningun mensaje encontrado</h2>
-            <p id="parrafo">Ingresa el texto que deseas encriptar o desencriptar!</p>
-             </div>
+        </div>
             <div class="mensaje_encriptado">
+                                <h1> Ningun mensaje encontrado</h1>
+                <p>Ingresa el texto que deseas encriptar o desencriptar!</p>
                 <textarea class="textoDeSalida" id="textoDeSalida"  readonly placeholder="El resultado aparecerá aquí"></textarea>
                 <button class="Copiar" onclick="copiarTexto()">Copiar</button>
             </div>
-        </div>            
+
+       <!-- </div>            
         <video muted autoplay loop>
             <source src="./video/Fondo video Tecnología Digital De Código Binario De Matriz HD.mp4" 
             type="video/mp4">
         </video>
-        <div class="capa"></div>
+        <div class="capa"></div> -->
     </main>
     <!--Pie de firma-->
     <footer class="footer">Desarrollado por Daniel Villalon para Alura Latam "Challenge encriptador de texto".</footer>
